@@ -1,0 +1,27 @@
+# Pipeline Summary
+
+Pipeline: *operator-hosted-pipeline*
+PipelineRun: *operator-hosted-pipeline-runxb57f*
+Start Time: *2025-07-01 06:40:57+00:00*
+
+## Tasks
+
+| Status | Task | Start Time | Duration |
+| ------ | ---- | ---------- | -------- |
+| :heavy_check_mark: | get-pr-number | 2025-07-01 06:40:57+00:00 | 5 seconds |
+| :heavy_check_mark: | acquire-lease | 2025-07-01 06:41:06+00:00 | 6 seconds |
+| :heavy_check_mark: | set-github-started-label | 2025-07-01 06:41:17+00:00 | 8 seconds |
+| :heavy_check_mark: | set-github-status-pending | 2025-07-01 06:41:17+00:00 | 7 seconds |
+| :heavy_check_mark: | set-env | 2025-07-01 06:41:29+00:00 | 5 seconds |
+| :heavy_check_mark: | clone-repository | 2025-07-01 06:41:39+00:00 | 59 seconds |
+| :heavy_check_mark: | clone-repository-base | 2025-07-01 06:41:39+00:00 | a minute |
+| :x: | detect-changes | 2025-07-01 06:42:51+00:00 | 53 seconds |
+
+Pipeline logs: https://gist.github.com/rh-operator-bundle-bot/99730f15c78a2f4a172076bcf36996f6
+
+## Troubleshooting
+
+Please refer to the [troubleshooting guide](https://redhat-openshift-ecosystem.github.io/operator-pipelines/users/community-operators-troubleshooting/).
+
+Run `/pipeline restart operator-hosted-pipeline` in case of pipeline failure to restart a pipeline.
+<!-- None -->
